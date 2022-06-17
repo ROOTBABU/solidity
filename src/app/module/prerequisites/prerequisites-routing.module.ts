@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BasicComponent } from 'src/app/components/basic/basic.component';
+import { PrerequisitesComponent } from 'src/app/components/prerequisites/prerequisites.component';
 
 const routes: Routes = [
-  {path:'',component:BasicComponent},
+  {path:'',component:PrerequisitesComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BasicRoutingModule { }
+export class PrerequisitesRoutingModule { }

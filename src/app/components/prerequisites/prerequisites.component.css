@@ -1,0 +1,10 @@
+.list-group-item:hover{
+    background-color: #642070;
+    color: white;
+    cursor: pointer;
+}
+
+.list-group-item:hover .media-body h5,
+.list-group-item:hover .media-body p{
+    color: white;
+}

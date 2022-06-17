@@ -4,7 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path:'',
-    loadChildren: ()=>import('./module/basic/basic.module').then(m=>m.BasicModule)
+    loadChildren: ()=>import('./module/homepage/homepage.module').then(m=>m.HomepageModule)
+  },
+  {
+    path:'prerequisites',
+    loadChildren: ()=>import('./module/prerequisites/prerequisites.module').then(m=>m.PrerequisitesModule)
   }
 ];
 
