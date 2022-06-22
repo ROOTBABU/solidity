@@ -29,7 +29,11 @@
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
-              "./src/assets/lib/all.min.js"
+              "./src/assets/lib/all.min.js",
+              "node_modules/marked/marked.min.js",
+              "node_modules/prismjs/prism.js",
+               "node_modules/prismjs/components/prism-csharp.min.js",
+               "node_modules/prismjs/components/prism-css.min.js"
             ]
           },
           "configurations": {

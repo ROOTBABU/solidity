@@ -1,1 +1,319 @@
-<p>basic works!</p>
+<div class="docs-wrapper basic">
+    <div id="docs-sidebar" class="docs-sidebar">
+        <div class="card">
+            <div class="card-body text-center">
+                <span class="theme-icon-holder me-2" style="background:none;">
+                    <i class="fas fa-chess-pawn fa-4x"></i>
+                </span>
+                <h5 class="card-title">Basics</h5>
+                <p class="card-text">Solidity v0.8.15</p>
+            </div>
+            <div class="top-search-box p-3">
+                <form class="search-form">
+                    <input type="text" placeholder="Search the basics..." name="search"
+                        class="form-control search-input">
+                    <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <nav id="docs-nav" class="docs-nav navbar">
+            <ul class="section-items list-unstyled nav flex-column pb-3">
+                <div class="d-flex flex-row mb-3" *ngFor="let ele of config">
+                    <span class="theme-icon-holder me-2">
+                        <i class="fas fa-map-signs"></i>
+                    </span>
+                    <p-accordion>
+                        <p-accordionTab header="{{ele.title}}">
+                            <li class="nav-item" *ngFor="let child of ele.childs"><a class="nav-link scrollto" (click)="onTabClick(child.href)">{{child.title}}</a></li>
+
+                            <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">State Variables</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Local Variables</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Global Variables</a></li> -->
+                        </p-accordionTab>
+                    </p-accordion>
+                </div>
+                <div class="collapse" id="collapse-1">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">State Variables</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Local Variables</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Global Variables</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-2" aria-expanded="false"
+                    aria-controls="collapse-2">
+                    <a class="nav-link scrollto" href="#section-2">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Types
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-2">
+                    <li class="nav-item section-title" style="margin-left: 34px;">
+                        <a href="#item-2"><i class="fas fa-map-signs"></i><label style="margin-left: 10px;">Value
+                                Types</label></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Boolean</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Integers</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Fixed Point Numbers</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Addresses</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Fixed-size Byte Arrays</a>
+                    </li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-3" aria-expanded="false"
+                    aria-controls="collapse-3">
+                    <a class="nav-link scrollto" href="#section-3">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Functions
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-3">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Function declaration</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Function Parameters</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Visibility</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">State mutability</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Return Variables</a></li>
+
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-4" aria-expanded="false"
+                    aria-controls="collapse-4">
+                    <a class="nav-link scrollto" href="#section-4">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        State Mutability
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-4">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">View</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Pure</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">payable</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">non-payable</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-5" aria-expanded="false"
+                    aria-controls="collapse-5">
+                    <a class="nav-link scrollto" href="#section-5">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Constant and Immutable <label style="margin-left:43px">State Variables</label>
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-5">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Constant</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Immutable</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-6" aria-expanded="false"
+                    aria-controls="collapse-6">
+                    <a class="nav-link scrollto" href="#section-6">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Control Structures
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-6">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">if/else and ternary
+                            operator</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">While, Do-While, and For
+                            Loop</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">break and continue</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-7" aria-expanded="false"
+                    aria-controls="collapse-7">
+                    <a class="nav-link scrollto" href="#section-7">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Error
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-7">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">require</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">revert</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">assert</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-8" aria-expanded="false"
+                    aria-controls="collapse-8">
+                    <a class="nav-link scrollto" href="#section-8">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Constructor
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-8">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">require</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">revert</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">assert</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-9" aria-expanded="false"
+                    aria-controls="collapse-9">
+                    <a class="nav-link scrollto" href="#section-9">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Array
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-9">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Syntax for array
+                            declaration</a></li>
+
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Fixed-size Arrays</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Dynamic Array</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-4">length member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-5">push() and push(x) member</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-6">pop() member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-7">update</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-8">delete</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-10" aria-expanded="false"
+                    aria-controls="collapse-10">
+                    <a class="nav-link scrollto" href="#section-10">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Global variables
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-10">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-2">Fixed-size Arrays</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-3">Dynamic Array</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-4">length member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-5">push() and push(x)
+                            member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-6">pop() member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-7">update</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-10-8">delete</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-11" aria-expanded="false"
+                    aria-controls="collapse-11">
+                    <a class="nav-link scrollto" href="#section-11">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Mapping
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-3">Dynamic Array</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-4">length member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-5">push() and push(x)
+                            member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-6">pop() member</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-7">update</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-8">delete</a></li>
+                </div>
+
+
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Enum
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Struct
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Mapping struct
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Storage vs Memory vs Stack on EVM
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Strings
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+
+                <li class="nav-item section-title" data-bs-toggle="collapse" href="#collapse-12" aria-expanded="false"
+                    aria-controls="collapse-12">
+                    <a class="nav-link scrollto" href="#section-12">
+                        <span class="theme-icon-holder me-2">
+                            <i class="fas fa-map-signs"></i>
+                        </span>
+                        Visibility
+                    </a>
+                </li>
+                <div class="collapse" id="collapse-11">
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-1">Message properties</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-11-2">Fixed-size Arrays</a></li>
+                </div>
+            </ul>
+        </nav>
+        <!--//docs-nav-->
+    </div>
+
+    <div class="docs-content sidenav-content">
+        <div class="container">
+            <markdown [src]="contentLink"> </markdown>
+        </div>
+    </div>
+</div>

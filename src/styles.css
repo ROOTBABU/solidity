@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.basic .docs-sidebar .docs-nav .section-items .p-element .p-accordion-tab .p-accordion-header span{
+    color: #5d6778;
+    font-size: 1rem;
+}
+
+.basic .docs-sidebar .docs-nav .section-items .p-element .p-accordion-tab .p-accordion-header{
+    padding: 8px 0px;
+}

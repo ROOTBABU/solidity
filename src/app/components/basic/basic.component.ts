@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic.component.css']
 })
 export class BasicComponent implements OnInit {
-
+  public contentLink:string='';  
+  config:any = [
+    {
+      title:"Variables",
+      childs:[
+        {
+          title:"Overview",
+          href:"variables-basic.md"
+        },
+        {title:"State Variables"},
+        {title:"Local Variables"},
+        {title:"Global Variables"},
+      ]
+    }
+  ]
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onTabClick(ele:any){
+    this.contentLink = "/assets/markdown/"+ele;
   }
 
 }
