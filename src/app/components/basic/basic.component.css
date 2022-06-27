@@ -1,6 +1,12 @@
 .sidenav-content {
     min-height: 100vh;
-    padding: 50px 3rem 2rem;
-    max-width: 50em;
-    margin: 0 auto;
+    padding: 20px 3rem 2rem;
   }
+
+.docs-content .breadcrumb li a{
+  color: black;
+}
+
+.nav{
+  padding: 0px 12px;
+}

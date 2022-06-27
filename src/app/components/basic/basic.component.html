@@ -8,6 +8,7 @@
                 <h5 class="card-title">Basics</h5>
                 <p class="card-text">Solidity v0.8.15</p>
             </div>
+
             <div class="top-search-box p-3">
                 <form class="search-form">
                     <input type="text" placeholder="Search the basics..." name="search"
@@ -25,7 +26,8 @@
                     </span>
                     <p-accordion>
                         <p-accordionTab header="{{ele.title}}">
-                            <li class="nav-item" *ngFor="let child of ele.childs"><a class="nav-link scrollto" (click)="onTabClick(child.href)">{{child.title}}</a></li>
+                            <li class="nav-item" *ngFor="let child of ele.childs"><a class="nav-link scrollto"
+                                    (click)="onTabClick(child.href)">{{child.title}}</a></li>
 
                             <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">State Variables</a></li>
                             <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Local Variables</a></li>
@@ -312,6 +314,16 @@
     </div>
 
     <div class="docs-content sidenav-content">
+        <div class="nav">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li class="breadcrumb-item"><a href="#">Basics</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Variables</li>
+                </ol>
+            </nav>
+        </div>
+        <hr style="margin: 1rem 12px;">
         <div class="container">
             <markdown [src]="contentLink"> </markdown>
         </div>
