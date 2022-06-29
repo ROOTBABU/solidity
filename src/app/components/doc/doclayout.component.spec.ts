@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BasicComponent } from './basic.component';
+import { DocLayoutComponent } from './doclayout.component';
 
 describe('BasicComponent', () => {
-  let component: BasicComponent;
-  let fixture: ComponentFixture<BasicComponent>;
+  let component: DocLayoutComponent;
+  let fixture: ComponentFixture<DocLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BasicComponent ]
+      declarations: [ DocLayoutComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BasicComponent);
+    fixture = TestBed.createComponent(DocLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

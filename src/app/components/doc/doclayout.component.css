@@ -16,10 +16,18 @@
   padding-right: 12px;
 }
 
-.github-link a{
+.docs-wrapper a{
   color:#642070;
 }
 
 .github-link a span{
   padding: 5px;
+}
+
+.docs-sidebar .card {
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: unset;
 }

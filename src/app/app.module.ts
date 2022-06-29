@@ -4,7 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BasicComponent } from './components/basic/basic.component';
+import { DocLayoutComponent } from './components/doc/doclayout.component';
+
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { PrerequisitesComponent } from './components/prerequisites/prerequisites.component';
 import { MarkdownModule } from 'ngx-markdown';
@@ -15,7 +16,7 @@ import { AccordionModule } from 'primeng/accordion';
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent,
+    DocLayoutComponent,
     HomepageComponent,
     PrerequisitesComponent
   ],

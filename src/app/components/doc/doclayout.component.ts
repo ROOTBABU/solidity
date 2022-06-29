@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.css']
+  selector: 'app-doc',
+  templateUrl: './doclayout.component.html',
+  styleUrls: ['./doclayout.component.css']
 })
 
 // class BreadCrumbs{
@@ -15,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
 //   ){};
 // }
 
-export class BasicComponent implements OnInit {
+export class DocLayoutComponent implements OnInit {
   public contentLink:string='/assets/markdown/basics.md'; 
   public breadCrumbs:any = [
     {title:"", link:"#", icon:"home"},

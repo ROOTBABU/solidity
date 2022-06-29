@@ -3,6 +3,19 @@
     "icon":"pawn",
     "topicsList": [
         {
+            "title": "HelloWorld",
+            "childs": [
+                {
+                    "title": "Overview",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "top",
+                        "githubLink": ""
+                    }
+                }
+            ]
+        },
+        {
             "title": "Variables",
             "childs": [
                 {
@@ -17,7 +30,7 @@
                     "title": "State Variables",
                     "href": {
                         "file": "variables-basic.md",
-                        "id":"state",
+                        "id":"state-variables",
                         "githubLink": ""
                     }
                 },
@@ -25,7 +38,7 @@
                     "title": "Local Variables",
                     "href": {
                         "file": "variables-basic.md",
-                        "id": "local",
+                        "id": "local-variables",
                         "githubLink": ""
                     }
                 },
@@ -33,7 +46,44 @@
                     "title": "Global Variables",
                     "href": {
                         "file": "variables-basic.md",
-                        "id": "types-of-solidity-variables",
+                        "id": "global-variables",
+                        "githubLink": ""
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Types",
+            "childs": [
+                {
+                    "title": "Overview",
+                    "href": {
+                        "file": "types.md",
+                        "id": "top",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "State Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id":"state-variables",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Local Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "local-variables",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Global Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "global-variables",
                         "githubLink": ""
                     }
                 }

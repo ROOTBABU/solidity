@@ -8,3 +8,7 @@
 .list-group-item:hover .media-body p{
     color: white;
 }
+
+span{
+    color: black;
+}

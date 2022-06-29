@@ -1,5 +1,8 @@
 html {scroll-behavior: smooth;}
 
+.docs-content a{
+  color:#642070 !important;
+}
 /* You can add global styles to this file, and also import other style files */
 .basic .docs-sidebar .docs-nav .section-items .p-element .p-accordion-tab .p-accordion-header span{
     color: #5d6778;
@@ -20,4 +23,16 @@ html {scroll-behavior: smooth;}
 
 .docs-content p{
     text-align: justify;
+}
+
+.p-element .p-accordion-content .nav-item .nav-link{
+    cursor: pointer;
+}
+
+/* .docs-nav .nav-link:hover:before {
+    background-color: #28b76b;
+} */
+
+.docs-nav .nav-link:target {
+    background-color: #28b76b;
 }
