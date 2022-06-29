@@ -1,3 +1,5 @@
+
+
 # Building Angular with Bazel
 
 Note: this doc is for developing Angular, it is _not_ public
@@ -158,6 +160,18 @@ At worst, you can fetch a broken artifact from the cache, making your build non-
 For this reason, we are careful to implement our Bazel rules to depend only on their inputs.
 
 Currently we only use remote caching on CircleCI and we let Angular core developers enable remote caching to speed up their builds.
+ 
+ ### My Great Heading {#custom-id}
+
+
+
+ <div id="AnchorId" class="AnchorId">.AnchorId..</div>
+ ...<h3 id="custom-id">My Great Heading</h3>
+
+ 
+ <div id="OtherAnchorId">..OtherAnchorId.</div>
+
+<h2 id="markdown-header-emphasis">Emphasis</h2>
 
 ### Remote cache in development
 
@@ -258,7 +272,10 @@ Usually there is a single item (or multiple items of the same kind) where the ov
 
 ### Windows
 
-#### bazel run
+[Custom foo description](#foo)
+
+
+#### <a name="foo"></a> bazel run
 If you see the following error:
 
 ```
@@ -308,6 +325,7 @@ $ yarn bazel build packages/...
 ERROR: /private/var/tmp/[...]/external/local_config_cc/BUILD:50:5: in apple_cc_toolchain rule @local_config_cc//:cc-compiler-darwin_x86_64: Xcode version must be specified to use an Apple CROSSTOOL
 ERROR: Analysis of target '//packages/core/test/render3:render3' failed; build aborted: Analysis of target '@local_config_cc//:cc-compiler-darwin_x86_64' failed; build aborted
 ```
+
 
 It might be linked to an interaction with VSCode.
 If closing VSCode fixes the issue, you can add the following line to your VSCode configuration:

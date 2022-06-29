@@ -1,0 +1,43 @@
+{
+    "title": "Basics",
+    "icon":"pawn",
+    "topicsList": [
+        {
+            "title": "Variables",
+            "childs": [
+                {
+                    "title": "Overview",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "top",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "State Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id":"state",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Local Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "local",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Global Variables",
+                    "href": {
+                        "file": "variables-basic.md",
+                        "id": "types-of-solidity-variables",
+                        "githubLink": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

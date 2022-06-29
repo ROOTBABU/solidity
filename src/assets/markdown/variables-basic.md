@@ -1,9 +1,11 @@
 # Variables
 
-Smart contracts in Solidity use variables to store information. You can think of variables as containers that hold information for use throughout your program.
+<p>Smart contracts in Solidity use variables to store information. You can think of variables as containers that hold information for use throughout your program.</p>
+<br>
 
 #### Declaration of Variables:
- In Solidity, variables have a slightly different declaration. First, the data type must be specified, then the access modifier, finally variable name. 
+
+<p>In Solidity, variables have a slightly different declaration. First, the data type must be specified, then the access modifier, finally variable name. </p>
 
 **Syntax:** `<type> <visibility> <variable name> ; `
 
@@ -14,6 +16,9 @@ Smart contracts in Solidity use variables to store information. You can think of
 **variable name:** what is the naming convetion of variable name
 
 <a href="https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.15+commit.e14f2714.js" class="code-link"><i class="fas fa-link"></i></a>
+
+<br>
+
 #### Example:
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
@@ -22,4 +27,6 @@ contract MyContract {
   int public num = 5; 
 }
 ```
-#### types of Solidity variables:
+<br>
+
+#### Types of Solidity variables:

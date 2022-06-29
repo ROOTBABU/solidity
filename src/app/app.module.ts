@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -24,7 +24,7 @@ import { AccordionModule } from 'primeng/accordion';
     AppRoutingModule,
     HttpClientModule,
     AccordionModule,
-    MarkdownModule.forRoot({ loader: HttpClient }),
+    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE  }),
     FormsModule,
     BrowserAnimationsModule
   ],
