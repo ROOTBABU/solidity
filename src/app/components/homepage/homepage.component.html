@@ -21,9 +21,9 @@
   
   <div class="page-header theme-bg-dark py-5 text-center position-relative">
     <div class="container">
-      <h1 class="page-heading single-col-max mx-auto">This is the right place</h1>
+      <h1 class="page-heading single-col-max mx-auto">This is the perfect place</h1>
       <div class="page-intro single-col-max mx-auto">
-         for you if you want to become an expert in solidity.
+        if you want to become an expert on solidity.
         <a href="#">Join Our community</a>
       </div>
     </div>
@@ -34,172 +34,27 @@
     <div class="container">
       <div class="docs-overview py-5">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-4 py-3">
+          <div class="col-12 col-lg-4 py-3" *ngFor="let ele of config">
             <div class="card shadow-sm">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-asterisk"></i>
+                    <i [class]="ele.icon"></i>
                   </span>
                   <!--//card-icon-holder-->
-                  <span class="card-title-text">Prerequisites</span>
+                  <span class="card-title-text">{{ele.title}}</span>
                 </h5>
                 <div class="card-text">
-                  At the end of this section you will learn basics of blockchain which help to start with solidity
-                  programming language.
+                  <p>{{ele.detail}}</p>
                 </div>
-                <a class="card-link-mask" href="prerequisites"></a>
+                <a class="card-link-mask" [href]="ele.route"></a>
               </div>
               <!--//card-body-->
             </div>
             <!--//card-->
           </div>
           <!--//col-->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-chess-pawn"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">Basics</span>
-                </h5>
-                <div class="card-text">
-                  Coming Soon!
-                </div>
-                <a class="card-link-mask" href="basic"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
           <!--//col-->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-chess-queen"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">Intermediate</span>
-                </h5>
-                <div class="card-text">
-                  Coming Soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-chess-king"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">Advanced</span>
-                </h5>
-                <div class="card-text">
-                  Coming Soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-  
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-file-alt"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">cheatsheet</span>
-                </h5>
-                <div class="card-text">
-                  Coming soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-  
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-bug"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">Bugs and security</span>
-                </h5>
-                <div class="card-text">
-                  Coming soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-  
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-map"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">roadmaps</span>
-                </h5>
-                <div class="card-text">
-                  Coming Soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-  
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title mb-3">
-                  <span class="theme-icon-holder card-icon-holder me-2">
-                    <i class="fas fa-blog"></i>
-                  </span>
-                  <!--//card-icon-holder-->
-                  <span class="card-title-text">Blogs</span>
-                </h5>
-                <div class="card-text">
-                  Coming soon!
-                </div>
-                <a class="card-link-mask" href="#"></a>
-              </div>
-              <!--//card-body-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-  
         </div>
         <!--//row-->
       </div>

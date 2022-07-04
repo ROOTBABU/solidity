@@ -33,7 +33,6 @@ export class DocLayoutComponent implements OnInit {
       this.config = ele?.topicsList;
       this.title = ele?.title;
       this.icon = "fas fa-chess-"+ele?.icon;
-
     });
   }
 

@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body text-center">
                 <span class="theme-icon-holder me-2" style="background:none;">
-                   <a href="#"> <i class="{{icon}} fa-4x"></i></a>
+                   <a href="#"> <i [class]="icon" class="fa-4x"></i></a>
                 </span>
                 <h5 class="card-title">{{title}}</h5>
                 <p class="card-text">Solidity v0.8.15</p>
@@ -25,7 +25,7 @@
                         <i class="fas fa-map-signs"></i>
                     </span>
                     <p-accordion>
-                        <p-accordionTab header="{{ele.title}}">
+                        <p-accordionTab [header]="ele.title">
                             <li class="nav-item" *ngFor="let child of ele.childs"><a class="nav-link scrollto"
                                     (click)="onTabClick(child.href)">{{child.title}}</a></li>
                         </p-accordionTab>

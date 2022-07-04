@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { DocLayoutComponent } from 'src/app/components/doc/doclayout.component';
 import { HomepageComponent } from 'src/app/components/homepage/homepage.component';
 import basicsConfig from '../../../assets/config/basics.json';
+import homeConfig from '../../../assets/config/homepage.json';
+
 
 const routes: Routes = [
-  {path:'',component:HomepageComponent},
+  {path:'',component:HomepageComponent,data:homeConfig},
   {path:'basic',component:DocLayoutComponent,data: basicsConfig},
 ];
 @NgModule({
