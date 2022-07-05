@@ -13,12 +13,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { AccordionModule } from 'primeng/accordion';
 
+import {TableModule} from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
+import {SliderModule} from 'primeng/slider';
+import {DialogModule} from 'primeng/dialog';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {ButtonModule} from 'primeng/button';
+import {ToastModule} from 'primeng/toast';
+import {InputTextModule} from 'primeng/inputtext';
+import {ProgressBarModule} from 'primeng/progressbar';
+import {DropdownModule} from 'primeng/dropdown';
+import { BlogsComponent } from './components/blogs/blogs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     DocLayoutComponent,
     HomepageComponent,
-    PrerequisitesComponent
+    PrerequisitesComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +41,18 @@ import { AccordionModule } from 'primeng/accordion';
     AccordionModule,
     MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE  }),
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TableModule,
+    CalendarModule,
+		SliderModule,
+		DialogModule,
+		MultiSelectModule,
+		ContextMenuModule,
+		DropdownModule,
+		ButtonModule,
+		ToastModule,
+    InputTextModule,
+    ProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

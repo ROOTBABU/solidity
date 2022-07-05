@@ -46,7 +46,7 @@
           "icon": "fas fa-blog",
           "title": "List of Blogs",
           "detail": "Coming Soon!",
-          "route": "#"
+          "route": "blogs"
         }
       ]
 }

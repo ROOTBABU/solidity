@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BlogsComponent } from 'src/app/components/blogs/blogs.component';
 import { DocLayoutComponent } from 'src/app/components/doc/doclayout.component';
 import { HomepageComponent } from 'src/app/components/homepage/homepage.component';
 import basicsConfig from '../../../assets/config/basics.json';
@@ -9,6 +10,7 @@ import homeConfig from '../../../assets/config/homepage.json';
 const routes: Routes = [
   {path:'',component:HomepageComponent,data:homeConfig},
   {path:'basic',component:DocLayoutComponent,data: basicsConfig},
+  {path:'blogs',component:BlogsComponent,data: basicsConfig}
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

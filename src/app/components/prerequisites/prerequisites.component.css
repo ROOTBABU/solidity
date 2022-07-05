@@ -18,6 +18,16 @@ span{
 }
 
 .homeicon a{
-    font-size: 15px;
+    font-size: 42px;
     text-decoration: none;
+}
+
+.table-header{
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.site-logo{
+    margin-top: -10px;
 }
