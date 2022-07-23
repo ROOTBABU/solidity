@@ -3,12 +3,45 @@
     "icon":"pawn",
     "topicsList": [
         {
-            "title": "HelloWorld",
+            "title": "Introduction",
+            "icon": "fas fa-praying-hands",
             "childs": [
                 {
-                    "title": "Overview",
+                    "title": "What is Solidity?",
                     "href": {
-                        "file": "variables-basic.md",
+                        "file": "helloworld.md",
+                        "id": "top",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Remix IDE",
+                    "href": {
+                        "file": "helloworld.md",
+                        "id": "remix-ide",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Hello World!",
+                    "href": {
+                        "file": "helloworld.md",
+                        "id": "write-hello-world-in-solidity",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Deployment",
+                    "href": {
+                        "file": "helloworld.md",
+                        "id": "how-to-compile-and-deploy-the-code",
+                        "githubLink": ""
+                    }
+                },
+                {
+                    "title": "Discussion",
+                    "href": {
+                        "file": "helloworld.md",
                         "id": "top",
                         "githubLink": ""
                     }

@@ -36,3 +36,53 @@ html {scroll-behavior: smooth;}
 .docs-nav .nav-link:target {
     background-color: #28b76b;
 }
+
+.img-label{
+    color: rgba(0,0,0,.68);
+    font-size: 14px;
+    margin-bottom:30px;
+}
+
+.docs-sidebar .p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.docs-sidebar .docs-nav .section-items .p-element .p-accordion-tab .p-accordion-header span::before{
+   content: none;
+}
+
+.docs-sidebar .p-accordion .p-accordion-content{
+    padding-left: 0px !important;
+}
+
+.docs-sidebar .docs-nav .section-items .p-element .p-accordion-tab .p-accordion-header span{
+    width: 0px;
+}
+
+.docs-sidebar .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus{
+    box-shadow: 0 0 0 0;
+}
+
+.docs-sidebar .p-accordion .p-accordion-content,.docs-sidebar .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link,.docs-sidebar .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link, .docs-sidebar .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link:hover, .docs-sidebar .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link, .docs-sidebar .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus{
+    border: 0 !important;
+    background: none !important;
+}
+
+.basic .docs-content img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.basic .docs-content h1{
+    margin-bottom: 24px;
+}
+
+.basic .docs-content pre{
+    margin-bottom: 22px;
+}
+
+.basic .docs-content #step-by-step-code{
+    margin-top: 50px;
+}

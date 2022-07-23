@@ -22,10 +22,11 @@
             <ul class="section-items list-unstyled nav flex-column pb-3">
                 <div class="d-flex flex-row mb-3" *ngFor="let ele of config">
                     <span class="theme-icon-holder me-2">
-                        <i class="fas fa-map-signs"></i>
+                        <i [class]="ele.icon"></i>
                     </span>
                     <p-accordion>
                         <p-accordionTab [header]="ele.title">
+                            
                             <li class="nav-item" *ngFor="let child of ele.childs"><a class="nav-link scrollto"
                                     (click)="onTabClick(child.href)">{{child.title}}</a></li>
                         </p-accordionTab>
@@ -37,7 +38,7 @@
     </div>
 
     <div class="docs-content sidenav-content" id="top">
-        <div class="d-flex">
+        <div class="d-flex content-header">
             <div class="nav">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -49,7 +50,7 @@
             </div>
             <div class="github-link"><a href="#"><i class="fab fa-github"></i><span>Edit on GitHub</span></a></div>
         </div>
-        <hr style="margin: 1rem 12px;">
+        <hr>
         <div class="container">
             <markdown [src]="contentLink"> </markdown>
         </div>

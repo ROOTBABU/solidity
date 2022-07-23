@@ -13,9 +13,15 @@ span{
     color: black;
 }
 
+.prerequistie{
+    margin: 0px 40px;
+    overflow: hidden;
+}
+
 .prerequistie a{
     color: #642070;
 }
+
 
 .homeicon a{
     font-size: 42px;
@@ -30,4 +36,8 @@ span{
 
 .site-logo{
     margin-top: -10px;
+}
+
+.table-header .nav{
+    margin-right: 12px;
 }
